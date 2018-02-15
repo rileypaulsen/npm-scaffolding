@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass assets/scss --output assets/css --omit-source-map-url --output-style compressed && postcss --use autoprefixer -d assets/css/ assets/css/*.css --map false",
+    "watch:sass": "watch 'npm run sass' assets/scss/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1",
+    "watch": "^1.0.2"
+  }
+}
